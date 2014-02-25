@@ -54,6 +54,7 @@ class BoggleBoard:
             x, y = position
             if x in range(0, self._n) and y in range(0, self._n) and pos != position:
                 successors.append(position)
+        return successors
         return map(self.get, successors)
 
     def print_board(self):
